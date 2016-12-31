@@ -26,4 +26,18 @@ public class Hand{
             System.out.println("(" + (hand.indexOf(hand.get(i))+1)+") " + ((Card)hand.get(i)).getCardName() );
         }
     }
+
+    public void dealCard(Deck gameDeck, int index){
+
+    }
+
+    public boolean indexExists(int index){
+        try{
+            hand.get(index);
+            return true;
+        }catch(Exception e){
+            System.out.println("That index doesn\'t exist.");
+            return false; //index doesn't exist
+        }
+    }
 }
